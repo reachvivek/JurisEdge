@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JurisEdge Law Firm - Expert Legal Services in Ranchi | Advocate Kishore Kumar</title>
+    <meta name="description" content="JurisEdge Law Firm provides expert legal services in Civil, Criminal, Trademark, Corporate law in Ranchi. Led by Advocate Kishore Kumar, High Court Ranchi.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/logo.jpeg" alt="JurisEdge Law Firm" class="logo">
+                    <h2 class="brand-name">JurisEdge</h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn-appointment" onclick="openAppointmentModal()">Book Consultation</a></li>
+                </ul>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Expert Legal Representation <br><span class="highlight">You Can Trust</span></h1>
+                    <p class="hero-subtitle">JurisEdge Law Firm provides comprehensive legal services across Civil, Criminal, Corporate, and Intellectual Property matters. Led by Advocate Kishore Kumar with extensive experience serving clients in Jamshedpur and across Jharkhand.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="5000">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Cases Won</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="25">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="4.7" data-decimal="true">0.0</span>
+                            <span class="stat-label">Google Rating</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="tel:+917561960118" class="btn btn-primary">
+                            <i class="fas fa-phone"></i> Call Now: +91-7561960118
+                        </a>
+                        <button class="btn btn-secondary" onclick="openAppointmentModal()">
+                            <i class="fas fa-calendar"></i> Book Consultation
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="lawyer-illustration">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Legal Services</h2>
+                <p>Comprehensive legal solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Civil Litigation</h3>
+                    <p>Property disputes, contract issues, tort claims, and other civil matters with expert representation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Criminal Defense</h3>
+                    <p>Comprehensive criminal defense for all types of cases from investigation to trial.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trademark"></i>
+                    </div>
+                    <h3>Trademark & Copyright</h3>
+                    <p>Intellectual property protection, registration, and enforcement services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Finance & Banking</h3>
+                    <p>Banking disputes, loan recovery, financial regulations, and debt recovery matters.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Family Court Matters</h3>
+                    <p>Divorce, custody, matrimonial disputes, and family law consultations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Law</h3>
+                    <p>Business formation, compliance, contracts, mergers, and corporate governance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Industrial Disputes</h3>
+                    <p>Labor law, employment disputes, tribunal matters, and worker compensation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Cyber Law</h3>
+                    <p>Cybercrime defense, data protection, digital fraud cases, and IT law compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Legal Team</h2>
+                <p>Experienced professionals dedicated to your legal success</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member main-member">
+                    <div class="member-photo">
+                        <img src="assets/kishorekumar.jpeg" alt="Advocate Kishore Kumar - Principal Advocate at JurisEdge Law Firm" class="professional-photo">
+                    </div>
+                    <div class="member-info">
+                        <h3>Kishore Kumar</h3>
+                        <p class="member-title">Principal Advocate</p>
+                        <p class="member-credentials">Advocate, High Court</p>
+                        <p class="member-description">Leading advocate with 25+ years of experience in civil, criminal, and corporate law. Specializes in high-stakes litigation and has successfully handled over 5000 cases.</p>
+                        <div class="member-contact">
+                            <a href="tel:+917561960118" class="contact-btn">
+                                <i class="fas fa-phone"></i> +91-7561960118
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="associates-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <h4>Sanjay Kumar Pandey</h4>
+                        <p class="member-title">Associate Advocate</p>
+                        <p class="member-specialization">Civil & Corporate Law</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <h4>Raj Kumar Sharma</h4>
+                        <p class="member-title">Associate Advocate</p>
+                        <p class="member-specialization">Criminal & Family Law</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <div class="photo-placeholder">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <h4>Anil Kumar J.K</h4>
+                        <p class="member-title">Associate Advocate</p>
+                        <p class="member-specialization">Corporate Law - Bangalore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <div class="google-rating">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="rating-text">4.7/5 on Google (127 reviews)</span>
+                </div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <h4>Rajesh Mehta</h4>
+                            <p>Business Owner</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"Advocate Kishore Kumar handled my property dispute case with exceptional professionalism. His deep knowledge of civil law and strategic approach helped me win a complex case. Highly recommended!"</p>
+                    <span class="testimonial-date">2 weeks ago</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <h4>Priya Singh</h4>
+                            <p>IT Professional</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"JurisEdge helped me with my divorce case and custody matters. The team was compassionate, professional, and kept me informed throughout the process. Excellent service!"</p>
+                    <span class="testimonial-date">1 month ago</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <h4>Amit Kumar</h4>
+                            <p>Startup Founder</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"Outstanding support for our trademark registration and corporate compliance. Kishore Sir's expertise in intellectual property law saved us from potential legal issues. Worth every penny!"</p>
+                    <span class="testimonial-date">3 weeks ago</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <h4>Dr. Sunita Sharma</h4>
+                            <p>Medical Practitioner</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"Professional, prompt, and reliable. JurisEdge handled my medical practice legal compliance perfectly. The team understands the healthcare industry's unique legal requirements."</p>
+                    <span class="testimonial-date">2 months ago</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <h4>Vikash Pandey</h4>
+                            <p>Real Estate Developer</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"Exceptional legal counsel for our real estate projects. Their expertise in property law and attention to detail prevented costly mistakes. Highly professional team!"</p>
+                    <span class="testimonial-date">1 month ago</span>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-info">
+                            <h4>Neha Agarwal</h4>
+                            <p>E-commerce Business Owner</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p>"JurisEdge helped us navigate complex cyber law issues and e-commerce compliance. Their modern approach to digital law matters is impressive. Excellent communication and results!"</p>
+                    <span class="testimonial-date">3 weeks ago</span>
+                </div>
+            </div>
+
+            <div class="google-reviews-cta">
+                <a href="#" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-google"></i> View All Google Reviews
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our Office</h2>
+                <p>Schedule an in-person consultation at our Jamshedpur office</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="office-details">
+                        <h3>JurisEdge Law Firm</h3>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>375, B-Block, Near Old CPN Club, Sonari, Jamshedpur, Jharkhand, East Singhbhum, 831011</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+91-7561960118</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Mon - Sat: 9:00 AM - 6:00 PM<br>Sunday: By Appointment</p>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@jurisedgelawfirm.com</p>
+                        </div>
+                    </div>
+                    <div class="location-actions">
+                        <button class="btn btn-primary" onclick="openAppointmentModal()">
+                            <i class="fas fa-calendar"></i> Book In-Person Consultation
+                        </button>
+                        <a href="https://maps.google.com/?q=22.822167,86.176833" class="btn btn-outline" target="_blank">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Legal Assistance Today</h2>
+                <p>Free consultation available - Call now or book online</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Directly</h3>
+                        <p>Speak with Advocate Kishore Kumar</p>
+                        <a href="tel:+917561960118" class="method-link">+91-7561960118</a>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Quick consultation and updates</p>
+                        <a href="https://wa.me/917561960118" class="method-link">Message on WhatsApp</a>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <h3>Book Appointment</h3>
+                        <p>Schedule a detailed consultation</p>
+                        <button class="method-link" onclick="openAppointmentModal()">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="quick-contact-form">
+                    <h3>Quick Inquiry</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <input type="email" placeholder="Email Address" required>
+                        <select required>
+                            <option value="">Select Legal Service</option>
+                            <option value="civil">Civil Litigation</option>
+                            <option value="criminal">Criminal Defense</option>
+                            <option value="corporate">Corporate Law</option>
+                            <option value="family">Family Law</option>
+                            <option value="trademark">Trademark & Copyright</option>
+                            <option value="cyber">Cyber Law</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea placeholder="Brief description of your legal matter" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3>JurisEdge Law Firm</h3>
+                        <p>Expert legal representation with a commitment to justice and client success.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Practice Areas</h4>
+                    <ul>
+                        <li><a href="#services">Civil Litigation</a></li>
+                        <li><a href="#services">Criminal Defense</a></li>
+                        <li><a href="#services">Corporate Law</a></li>
+                        <li><a href="#services">Family Law</a></li>
+                        <li><a href="#services">Intellectual Property</a></li>
+                        <li><a href="#services">Cyber Law</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jamshedpur, Jharkhand</p>
+                        <p><i class="fas fa-phone"></i> +91-7561960118</p>
+                        <p><i class="fas fa-envelope"></i> info@jurisedgelawfirm.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> JurisEdge Law Firm. All rights reserved. | Legal services by Advocate Kishore Kumar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/917561960118?text=Hello,%20I%20need%20legal%20consultation" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Appointment Modal -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAppointmentModal()">&times;</span>
+            <h2>Book Consultation</h2>
+            <form id="appointmentForm">
+                <div class="form-row">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+                <input type="email" placeholder="Email Address" required>
+                <div class="form-row">
+                    <input type="date" required>
+                    <select required>
+                        <option value="">Preferred Time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                    </select>
+                </div>
+                <select required>
+                    <option value="">Consultation Type</option>
+                    <option value="in-person">In-Person</option>
+                    <option value="phone">Phone Call</option>
+                    <option value="video">Video Call</option>
+                </select>
+                <select required>
+                    <option value="">Legal Matter</option>
+                    <option value="civil">Civil Litigation</option>
+                    <option value="criminal">Criminal Defense</option>
+                    <option value="corporate">Corporate Law</option>
+                    <option value="family">Family Law</option>
+                    <option value="trademark">Trademark & Copyright</option>
+                    <option value="cyber">Cyber Law</option>
+                    <option value="other">Other</option>
+                </select>
+                <textarea placeholder="Brief description of your case" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Confirm Appointment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
